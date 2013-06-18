@@ -1,6 +1,6 @@
 defmodule Mongoex.Server do
   def start do
-    :ok = :application.start(:mongodb)
+    :application.start(:mongodb)
     setup_pool
   end
 
